@@ -1,0 +1,33 @@
+\begin{thebibliography}{1}
+
+\bibitem{Graether:2012:JFR:2212776.2212386}
+Graether, E., and Mueller, F.
+\newblock Joggobot: A flying robot as jogging companion.
+\newblock In {\em CHI '12 Extended Abstracts on Human Factors in Computing
+  Systems}, CHI EA '12, ACM (New York, NY, USA, 2012), 1063--1066.
+
+\bibitem{Hansen:2014:UGC:2578153.2578156}
+Hansen, J.~P., Alapetite, A., MacKenzie, I.~S., and M{\o}llenbach, E.
+\newblock The use of gaze to control drones.
+\newblock In {\em Proceedings of the Symposium on Eye Tracking Research and
+  Applications}, ETRA '14, ACM (New York, NY, USA, 2014), 27--34.
+
+\bibitem{Pfeil:2013:EGM:2449396.2449429}
+Pfeil, K., Koh, S.~L., and LaViola, J.
+\newblock Exploring 3d gesture metaphors for interaction with unmanned aerial
+  vehicles.
+\newblock In {\em Proceedings of the 2013 International Conference on
+  Intelligent User Interfaces}, IUI '13, ACM (New York, NY, USA, 2013),
+  257--266.
+
+\bibitem{Vafaei:2013}
+Vafaei, F.
+\newblock Taxonomy of gestures in human computer interaction (2013).
+
+\bibitem{Wobbrock:2009:UGS:1518701.1518866}
+Wobbrock, J.~O., Morris, M.~R., and Wilson, A.~D.
+\newblock User-defined gestures for surface computing.
+\newblock In {\em Proceedings of the SIGCHI Conference on Human Factors in
+  Computing Systems}, CHI '09, ACM (New York, NY, USA, 2009), 1083--1092.
+
+\end{thebibliography}
