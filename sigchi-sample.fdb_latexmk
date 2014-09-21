@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex sigchi-sample"] 1411285279 "sigchi-sample.aux" "sigchi-sample.bbl" "sigchi-sample" 1411285330
+["bibtex sigchi-sample"] 1411314545 "sigchi-sample.aux" "sigchi-sample.bbl" "sigchi-sample" 1411314548
   "./acm-sigchi.bst" 1313101014 20072 e6117c8e1df770982b2669fe3a5732f1 ""
   "paperList.bib" 1411268795 4267 043729c157c15b139a03bda92653edec ""
-  "sigchi-sample.aux" 1411285329 5812 c34b9ede627f86f5dd072397b48c8798 ""
+  "sigchi-sample.aux" 1411314547 4060 f38d093f7dbda0bf890e6876db182b04 ""
   "sigchi-sample.bcf" 0 -1 0 ""
   (generated)
   "sigchi-sample.blg"
   "sigchi-sample.bbl"
-["pdflatex"] 1411285327 "sigchi-sample.tex" "sigchi-sample.pdf" "sigchi-sample" 1411285330
+["pdflatex"] 1411314546 "sigchi-sample.tex" "sigchi-sample.pdf" "sigchi-sample" 1411314548
   "/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii" 1337017135 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2014/texmf-dist/tex/generic/ifxetex/ifxetex.sty" 1284331290 1458 43ab4710dc82f3edeabecd0d099626b2 ""
   "/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/gettitlestring.sty" 1303254447 8237 52810bdb4db2270e717422560a104aea ""
@@ -57,12 +57,11 @@
   "/usr/local/texlive/2014/texmf-dist/tex/latex/tools/calc.sty" 1399675188 10002 f32f4490d0c87a7854adf544bd459155 ""
   "/usr/local/texlive/2014/texmf-dist/tex/latex/url/url.sty" 1388531844 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "GestureSetFigure1.pdf" 1411282963 2842376 df13bd5ff07909f10c2d452d17717807 ""
-  "TaskFigure.pdf" 1411275835 394659 9c86ba0f128b317e23de4f2e397736b1 ""
   "agreement.pdf" 1411275700 98766 2a126e6256db18b9be458bd8f1a3646c ""
-  "sigchi-sample.aux" 1411285329 5812 c34b9ede627f86f5dd072397b48c8798 ""
-  "sigchi-sample.bbl" 1411285280 1351 13766cef62a1c18e2c5917826f67d5da "bibtex sigchi-sample"
-  "sigchi-sample.out" 1411285329 973 d14943d8ebe128239997960fe93a3d4a ""
-  "sigchi-sample.tex" 1411285326 29108 c1b2011c64b5a15c0ae8d98197d13a01 ""
+  "sigchi-sample.aux" 1411314547 4060 f38d093f7dbda0bf890e6876db182b04 ""
+  "sigchi-sample.bbl" 1411314546 1351 13766cef62a1c18e2c5917826f67d5da "bibtex sigchi-sample"
+  "sigchi-sample.out" 1411314547 839 1cc0ed67cde9136618c0897975af439c ""
+  "sigchi-sample.tex" 1411314542 33300 7b5a6fa174f0ecd698bfb1551130704a ""
   "sigchi.cls" 1406693126 53804 8dfcea95058ed98096422ee12a1c7192 ""
   "userTask2.png" 1411201712 4218256 c63cec26d8c269d7e4d28042cc7440e0 ""
   (generated)

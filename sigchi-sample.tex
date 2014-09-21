@@ -70,20 +70,18 @@ breaklinks=true,
 
 \title{User-Defined Gesture for Flying Object}
 
-\numberofauthors{1}
-\author{
-  \alignauthor Anonoymous
-}
-
 \maketitle
 
 \begin{abstract}
-Nowadays, ways of interaction between human and computer are more diversified; however, these smart products are mostly immobile. With the development in the field of robotics and automation, intelligent products are no longer stationary. Although the present study of interactions are appropriate for tablet or Smartphone, they are not yet been fully discussed in the field of flying objects. In this paper, we design a flying prototype that combined aircraft and webcam for human computer interaction called “Hummieye.” This paper presents a complete user-defined gesture set that relies on eliciting gestures from users including control the flying object, take a picture or video…etc. Also, we use the think-aloud method to understand users’ mental models when they perform the gestures. 
-Our experimental results discover that the gestures of most users will be limited to the prior experience of using a tablet or Smartphone. Nevertheless, we found that users will use different number of hands or fingers to interact with flying object based on the different distance. Moreover, users provide “unexpected” gestures when they fine tuning the flying object or asking it to perform some instruction. Our results will provide designers create better ways of interaction for flying object.Our results will help designers create better gesture control sets informed by user behavior.
+Nowadays, ways of interaction between human and computer are more diversified; however, these smart products are mostly immobile. With the development in the field of robotics and automation, intelligent products are no longer stationary. Although the present study of interactions are appropriate for tablet or smartphone, they have not yet been fully discussed in the field of flying objects. We presents a user-defined UAV gesture control study in outside without wearable device to collect user behavior. In all, 176 gestures from 16 participants in user study 1 were logged, analyzed and pair with think-aloud data for 11 commands performed. Our insights indicated BLAHBLAHB LAHBLAHBLA HBLAHBLAHBL AHBLAHBLA HBLAHBLAHBL AHBLAHBLAH BLAHBLAHB LAHBLAHBLA LAHBLAHBLA LAHBLAHBLA LAHBLAHBLA LAHBLAHBLA LAHBLAHBLA LAHBLAHBLA LAHBLAHBLA LAHBLAHBLA LAHBLAHBLA LAHBLAHBLA LAHBLAHBLA LAHBLAHBLA LAHBLAHBLA LAHBLAHBLA LAHBLAHBLA LAHBLAHBLA. 
+
+Our results will help designers and developers create better gesture sets informed by user behavior.
+% Nowadays, ways of interaction between human and computer are more diversified; however, these smart products are mostly immobile. With the development in the field of robotics and automation, intelligent products are no longer stationary. Although the present study of interactions are appropriate for tablet or Smartphone, they are not yet been fully discussed in the field of flying objects. In this paper, we design a flying prototype that combined aircraft and webcam for human computer interaction called “Hummieye.” This paper presents a complete user-defined gesture set that relies on eliciting gestures from users including control the flying object, take a picture or video…etc. Also, we use the think-aloud method to understand users’ mental models when they perform the gestures. 
+% Our experimental results discover that the gestures of most users will be limited to the prior experience of using a tablet or Smartphone. Nevertheless, we found that users will use different number of hands or fingers to interact with flying object based on the different distance. Moreover, users provide “unexpected” gestures when they fine tuning the flying object or asking it to perform some instruction. Our results will provide designers create better ways of interaction for flying object.Our results will help designers create better gesture control sets informed by user behavior.
 \end{abstract}
 
 \keywords{
-	AR.Drone; UAV; Gestures; User-defined gesture; Kinect
+	AR.Drone; UAV; Gestures; User-defined gesture
 }
 
 \category{H.5.m.}{Information Interfaces and Presentation}
@@ -98,24 +96,34 @@ Our experimental results discover that the gestures of most users will be limite
 
 \section{Introduction}
 
-Unmanned aerial vehicles (UAVs), also known as drones, are aircrafts whose flight is controlled remotely by a pilot or controlled autonomously by computers. A drone is a representation of technological advance and is commonly known for military use to reduce casualties. However, up to date, most people do not possess drones, aircrafts, flying objects, and so forth. Thus, the manipulation over or the interaction with a flying object remains unfamiliar to most people. Such unfamiliarity also leads to a paucity of previous works on human-drone interaction. Although some possessing flying objects such as low-price, small-sized, radio-controlled helicopters may have experiences on maneuvering its flight over a controller or a smartphone, the flying objects are usually used for games and entertainments instead of useful productivity and utility such as photography. Moreover, there still exists a steep learning curve to become a skillful pilot of a UAV with a controller or a smartphone. The goal of this research is to cull, classify, and analyze intuitive gestures created by participants and to conclude the most favorable gestures for each corresponding function (e.g., pitch, roll, and yaw) of a UAV. We expect that drone manipulation by user-defined gestures should be fun and greatly reduce the learning curve resulting in improvements of human-drone interaction. Moreover, the result of this work provides drone designers, developers, and engineers an insight into such novel human-drone interactions with expected gestures.
+Unmanned aerial vehicles (UAVs), also known as drones, are aircrafts whose flight is controlled remotely by a pilot or controlled autonomously by computers. Up to date, most people do not possess drones, aircrafts, flying objects, and so forth. Thus, the manipulation over or the interaction with a flying object remains unfamiliar to most people. The goal of this research is to cull, classify, and analyze intuitive gestures created by participants and to conclude the most favorable gestures for each function set of a UAV. We believe that drone manipulation by user-defined gestures should be fun and greatly reduce the learning curve resulting in improvements of human-drone interaction. Moreover, the results of this work provide drone designers, developers, and engineers an insight into such novel human-drone gestural interactions.
+% Unmanned aerial vehicles (UAVs), also known as drones, are aircrafts whose flight is controlled remotely by a pilot or controlled autonomously by computers. A drone is a representation of technological advance and is commonly known for military use to reduce casualties. However, up to date, most people do not possess drones, aircrafts, flying objects, and so forth. Thus, the manipulation over or the interaction with a flying object remains unfamiliar to most people. Such unfamiliarity also leads to a paucity of previous works on human-drone interaction. Although some possessing flying objects such as low-price, small-sized, radio-controlled helicopters may have experiences on maneuvering its flight over a controller or a smartphone, the flying objects are usually used for games and entertainments instead of useful productivity and utility such as photography. Moreover, there still exists a steep learning curve to become a skillful pilot of a UAV with a controller or a smartphone. The goal of this research is to cull, classify, and analyze intuitive gestures created by participants and to conclude the most favorable gestures for each corresponding function (e.g., pitch, roll, and yaw) of a UAV. We expect that drone manipulation by user-defined gestures should be fun and greatly reduce the learning curve resulting in improvements of human-drone interaction. Moreover, the result of this work provides drone designers, developers, and engineers an insight into such novel human-drone interactions with expected gestures.
 
-There are three main control axes on the drone, including a longitudinal axis (roll), vertical axis (yaw), and lateral axis (pitch), controlling the drone to move left and right, forward and backward, and rotate in clockwise and counterclockwise, respectively. In addition, the change in rotational speed of the propellers in turn pushes the drone to a new altitude. Due to such hardware design of a drone, we asked participants to come up with gestures for these translational and rotational basic controls.
+% There are three main control axes on the drone, including a longitudinal axis (roll), vertical axis (yaw), and lateral axis (pitch), controlling the drone to move left and right, forward and backward, and rotate in clockwise and counterclockwise, respectively. In addition, the change in rotational speed of the propellers in turn pushes the drone to a new altitude. Due to such hardware design of a drone, we asked participants to come up with gestures for these translational and rotational basic controls.
 
-Photographs are one of the most crucial memorabilia to keep track and share moments of our daily lives. Fortunately, some cheap, small-sized UAVs such as Parrot AR Drone equipped with cameras have made flying objects involve in the field of photography. Moreover, drones without being subject to topographical limitations have the advantage to fly to any position unreachable by man. Thus, users are able to take photos in a way that they never could before. Nevertheless, in order for UAVs to play a role in photography, drones should be easy to use, and its control methods must be natural and intuitive. We have confidence that gestures or body movements are one of the best control methods for UAVs where improvements on human-drone interaction and flying experience can be made. As a result, this study focuses on user-defined gestures, taxonomy of gestures, and the Likert-scale of gestures.
+% Photographs are one of the most crucial memorabilia to keep track and share moments of our daily lives. Fortunately, some cheap, small-sized UAVs such as Parrot AR Drone equipped with cameras have made flying objects involve in the field of photography. Moreover, drones without being subject to topographical limitations have the advantage to fly to any position unreachable by man. Thus, users are able to take photos in a way that they never could before. Nevertheless, in order for UAVs to play a role in photography, drones should be easy to use, and its control methods must be natural and intuitive. We have confidence that gestures or body movements are one of the best control methods for UAVs where improvements on human-drone interaction and flying experience can be made. As a result, this study focuses on user-defined gestures, taxonomy of gestures, and the Likert-scale of gestures.
 
 \section{RELATED WORK}
+Wobbrock et al. \cite{Wobbrock:2009:UGS:1518701.1518866} conducted a study of gesture taxonomy for surface computing. His work provides important insight into the design of gestures for tablets. However, the gestures and its taxonomy concluded in this work were subject to 2D touch-screen devices without any further discussion involving 3D in-air gestures.
 
-Wobbrock et al.\cite{Wobbrock:2009:UGS:1518701.1518866}conducted a study of gesture taxonomy for surface computing. Wobbrock recruited 20 participants to perform gestures for several tasks. He collected 1080 gestures and manually classified each gesture along four dimensions: form, nature, binding, and flow. Each dimension contains multiple categories. His work provides important insight into the design of gestures for tablets. However, the gestures and its taxonomy concluded in this work were subject to 2D touch-screen devices without any further discussion involving 3D in-air gestures.
+Vafaei \cite{Vafaei:2013} offered more detailed dimensions of gesture taxonomy. He proposed two main groups of the dimensions: gesture mapping and physical characteristics. Although Wobbrock et al.'s and Vafaei's works put stress on touch screens where no in-air gestures were found, the idea of the classification of gestures was quite inspirational for our study.
 
-Vafaei \cite{Vafaei:2013} offered more detailed dimensions of gesture taxonomy. He proposed two main groups of the dimensions: gesture mapping and physical characteristics. Gesture mapping, including nature, form, binding, temporal, and context dimensions, involves how users map gestures to tasks. The group of physical characteristics focuses on the physical attributes of a gesture itself categorized into six dimensions: dimensionality, complexity, body part, handedness, hand shape, and range of motion. Although Wobbrock et al.'s and Vafaei's works put stress on touch screens where no in-air gestures were found, the idea of the classification of gestures was quite inspirational for our study.
-
-Hansen et al.\cite{Hansen:2014:UGC:2578153.2578156} explored four different gaze control modes to control a drone. Gaze interaction provides accessibility for disabled people. Drones may enable those with low mobility to quickly visually inspect surroundings or quickly obtain objects nearby. Nonetheless, the results of the work indicated that the participants mostly favored the mouse over gaze in terms of ease-of-use and reliability. Therefore, future work of similar topic is expected.
+Hansen et al. \cite{Hansen:2014:UGC:2578153.2578156} explored four different gaze control modes to control a drone. Gaze interaction provides accessibility for disabled people. Nonetheless, the results of the work indicated that the participants mostly favored the mouse over gaze in terms of ease-of-use and reliability. Therefore, future work of similar topics is expected.
 
 Graether and Mueller \cite{Graether:2012:JFR:2212776.2212386} provided preliminary insights into the design of a flying robot as a jogging companion. The insights includes four themes: embodiment, control, personality, and communication. Graether and Mueller discovered that the communication between the jogger and the flying robot is best through hand gestures.
 
-Pfeil et al. \cite{Pfeil:2013:EGM:2449396.2449429} explored five 3D gesture metaphors for interaction with UAVs, including first person, game controller, the throne, proxy manipulation, and seated proxy. Metaphors of proxy manipulation and seated proxy have the highest rating since the gesture sets are more natural, intuitive and are metaphors of grasping the drone in user's hand. Based on the results of this work, participants using gesture control were capable of completing the trial in less time compared to that using smartphone control. Such result is significant and tremendous for the field of human-computer interaction. However, the gesture sets defined by the author instead of users may not be the most intuitive, natural. We believe that user-defined gestures for drones should do even more improvements on the user experience.
-returned to you to fix.
+Pfeil et al. \cite{Pfeil:2013:EGM:2449396.2449429} explored five 3D gesture metaphors for interaction with UAVs. Metaphors of proxy manipulation and seated proxy have the highest rating since the gesture sets are more natural, intuitive. Based on the results of their work, participants using gestural control were capable of completing the trial in less time compared to that using smartphone control. Such result is significant and tremendous for the field of human-computer interaction. However, the gesture sets defined by the author instead of users may not be the most intuitive and natural. We believe that user-defined gestures for drones should do even more improvements on the user experience.
+
+% Wobbrock et al.\cite{Wobbrock:2009:UGS:1518701.1518866}conducted a study of gesture taxonomy for surface computing. Wobbrock recruited 20 participants to perform gestures for several tasks. He collected 1080 gestures and manually classified each gesture along four dimensions: form, nature, binding, and flow. Each dimension contains multiple categories. His work provides important insight into the design of gestures for tablets. However, the gestures and its taxonomy concluded in this work were subject to 2D touch-screen devices without any further discussion involving 3D in-air gestures.
+
+% Vafaei \cite{Vafaei:2013} offered more detailed dimensions of gesture taxonomy. He proposed two main groups of the dimensions: gesture mapping and physical characteristics. Gesture mapping, including nature, form, binding, temporal, and context dimensions, involves how users map gestures to tasks. The group of physical characteristics focuses on the physical attributes of a gesture itself categorized into six dimensions: dimensionality, complexity, body part, handedness, hand shape, and range of motion. Although Wobbrock et al.'s and Vafaei's works put stress on touch screens where no in-air gestures were found, the idea of the classification of gestures was quite inspirational for our study.
+
+% Hansen et al.\cite{Hansen:2014:UGC:2578153.2578156} explored four different gaze control modes to control a drone. Gaze interaction provides accessibility for disabled people. Drones may enable those with low mobility to quickly visually inspect surroundings or quickly obtain objects nearby. Nonetheless, the results of the work indicated that the participants mostly favored the mouse over gaze in terms of ease-of-use and reliability. Therefore, future work of similar topic is expected.
+
+% Graether and Mueller \cite{Graether:2012:JFR:2212776.2212386} provided preliminary insights into the design of a flying robot as a jogging companion. The insights includes four themes: embodiment, control, personality, and communication. Graether and Mueller discovered that the communication between the jogger and the flying robot is best through hand gestures.
+
+% Pfeil et al. \cite{Pfeil:2013:EGM:2449396.2449429} explored five 3D gesture metaphors for interaction with UAVs, including first person, game controller, the throne, proxy manipulation, and seated proxy. Metaphors of proxy manipulation and seated proxy have the highest rating since the gesture sets are more natural, intuitive and are metaphors of grasping the drone in user's hand. Based on the results of this work, participants using gesture control were capable of completing the trial in less time compared to that using smartphone control. Such result is significant and tremendous for the field of human-computer interaction. However, the gesture sets defined by the author instead of users may not be the most intuitive, natural. We believe that user-defined gestures for drones should do even more improvements on the user experience.
+% returned to you to fix.
 
 \section{USER STUDY}
 
@@ -136,16 +144,16 @@ Parrot AR.Drone 2.0, a quadrotor vehicle, equipped with a camera facing was chos
 
 32 paid participants with age ranging from 19 to 25 volunteered for the study. None of the participants had experience with piloting a flying object. All participants were right-handed. All were college students recruited from various fields including financial management, law school, chemical engineering, medicine school, and so forth. Half of the participants consisted of 6 females and 10 males attended Study 1 for gesture set development. The other half consisted of 6 females and 10 males took part in Study 2 for gesture ratings.
 
-\begin{figure}[!h]
-\centering
-\includegraphics[width=1\columnwidth]{TaskFigure.pdf}
-\caption{Our test space was approximately 4 m long, and 4 m wide. The participant was placed away from the area for a full view of the test space. At point 1 was where the Drone began to take off. At point 2 and point 3 were two lightweight columns with 1.2 m and 0.6 m in height, both made of empty beverage cans stacking up. The participant was asked to push the column with the Drone at point 2 and 3 in sequence. Point 4 was a 1.8 m-high obstacle made of stacked grocery boxes, and the Drone should fly over the obstacle. Behind the obstacle was a piece of paper written with a number that was not visible from the participant's viewpoint.}
-\label{fig:figure1}
-\end{figure}
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[width=1\columnwidth]{TaskFigure.pdf}
+% \caption{Our test space was approximately 4 m long, and 4 m wide. The participant was placed away from the area for a full view of the test space. At location 1 was where the Drone began to take off. At location 2 and location 3 were two lightweight columns with 1.2 m and 0.6 m in height, both made of empty beverage cans stacking up. Location 4 was a 1.8 m-high obstacle made of stacked grocery boxes.}
+% \label{fig:taskfigure}
+% \end{figure}
 
-\subsection{Trial Design}
+% \subsection{Trial Design}
 
-The trial designed by Pfeil et al. \cite{Pfeil:2013:EGM:2449396.2449429} was to ask users to stand in front of a Kinect device, use gestures to fly the Drone to the 4 corners of a rectangular test space, and eventually land on a designated spot within the test space. We designed our trials for Study 2 in a similar manner (FIGURE 2). Our test space was approximately 4 m long, and 4 m wide. The participant was placed away from the area for a full view of the test space. At point 1 was where the Drone began to take off. At point 2 and point 3 were two lightweight columns with 1.2 m and 0.6 m in height, both made of empty beverage cans stacking up. The participant was asked to push the column with the Drone at point 2 and 3 in sequence. Point 4 was a 1.8 m-high obstacle made of stacked grocery boxes, and the Drone should fly over the obstacle. Behind the obstacle was a piece of paper written with a number that was not visible from the participant's viewpoint. The participant should rotate the Drone and read the number through the computer screen receiving live pictures from the camera of the Drone. After reading the number, the Drone landed immediately, and the trial was completed. If the Drone crashed during the trial, the Drone would take off at the crash site and continue the rest of trial. Each participant completed the trial 5 times.
+% The trial designed by Pfeil et al.\cite{Pfeil:2013:EGM:2449396.2449429} was to ask users to stand in front of a Kinect device, use gestures to fly the Drone to the 4 corners of a rectangular test space, and eventually land on a designated spot within the test space. We designed our trials for Study 2 in a similar manner (Figure\ref{fig:taskfigure}). First, after the Drone took off at location 1, the participant was asked to push and topple the columns with the Drone at location 2 and 3 in sequence. The toppling of the columns functioned as a confirmation of checkpoint that the Drone had reached the specified spot. Moreover, the columns with different height were designed for the participants to make use of the ascend-descend gesture control. Then, the Drone should fly over the obstacle at location 4. Behind the obstacle was a piece of paper written with a number that was not visible from the participant's viewpoint. Thus, the participant should fly to location 5, rotate the Drone, and read the number through the computer screen receiving live pictures from the camera of the Drone. After reading the number, the Drone landed immediately, and the trial was completed. If the Drone crashed during the trial, the Drone would take off at the crash site and continue the rest of trial. Each participant completed the trial 5 times.
 
 % \begin{figure*}
 %   \centering
@@ -160,91 +168,6 @@ The trial designed by Pfeil et al. \cite{Pfeil:2013:EGM:2449396.2449429} was to 
 In Study 1, an approximate 90-second short video of the introduction and motivation of this project was played in the beginning. Second, another 60-second short video showed how the drone moves. Then, the participant was asked to stand up and start to come up with 12 gestures for all 12 basic controls in random order. In addition, there was one advance movement control, point-to-specified-destination control, we thought this could be exceptionally useful and powerful relative to basic movement control for the Drone to reach a desired destination. Therefore, the participant had total of 13 gestures after Study 1. We allowed the participant to change any previously defined gesture if a new idea came to mind. After all gestures being developed, we employed a Wizard of Oz approach to give the participant an idea of how the gestures they created worked.
 
 After Study 1, we categorized the user-defined gesture sets. Since the gesture for left and right were "symmetric", and so were that for ascend and descend, we grouped them into left-right and ascend-descend gesture sets, respectively, leading to 11 gesture sets. All the actions of all 11 gesture sets were recorded in a video which was played for all participants to pick their favorite gesture for each gesture set in Study 2. Then, the favorite gestures along with Wizard of Oz approach were used in the trial. At last, all participants in Study 2 were asked to watch the same video with all gesture sets and rate for every gesture according to their preference using a 5-point Likert scale.
-
-\begin{figure}[!h]
-\centering
-\includegraphics[width=1\columnwidth]{agreement.pdf}
-\caption{With Caption Below, be sure to have a good resolution image
-  (see item D within the preparation instructions).}
-\label{fig:figure1}
-\end{figure}
-
-\section{RESULT \& DISCUSSION}
-
-\subsection{Classification of 3D Gestures}
-Gesture taxonomy has been used in several works involving speech gestures, sign language, touch screen gestures, and so forth. However, works involving gestures for flying object seemed rare lately. We managed to explore the most intuitive gestures for UAVs and provide future developers insights for better control methods.
-
-In reference to related works, we manually classified each gesture along seven dimensions: form, nature, flow, dimensionality, handedness, hand shape, and trace. All the gestures were performed by participants from Study 1. Each dimension contains multiple categories, shown in Table 2.
-
-The dimension of form describes the motions of all gestures. The categories of this dimension includes static, large-scale motion, and small-scale motion. It is important to find out how many body parts are involved so that future developers will choose appropriate sensor devices to capture the motion.
-
-In the nature dimension, symbolic gestures are visual depictions with no simple equivalent in the world of objects and movements. For example, a time out gesture symbolizes the hovering action. Pantomimic gestures imitate a real meaningful action. For example, a participant would have the arms straight with clenched fist hand shape on both hands and one hand above the other as if turning a steering wheel. A pointing gesture points out the direction where the participant intends the drone to fly. Manipulative gestures have direct relation with real world object interaction. For example, moving the hands forward indicates pushing away the drone. Finally, abstract gestures are with arbitrary mappings. For example, putting a hand on the head to take off the drone would be an abstract gesture.
-
-In the flow dimension, if a gesture is discrete, the gesture must be completed first and subsequently bring out the desired task. For instance, the drone starts to move right after the user's right arm is straightened towards right. A gesture would be continuous if the task is performed during gesticulation. The drone rotates around the user as soon as the user faces at a different direction as an example.
-
-In the dimensionality dimension, gestures are classified according to the number of axes involved. The categories include single-axis, double-axis, tri-axis, and six-axis. The descriptions of each category are listed in TABLE X.
-
-The handedness dimension describes the involvement of the user's dominant hand and non-dominant hand for each task. In our study, no participant performed gestures specifically for the non-dominant hand, so the non-dominant category is no needed. Participants performed gestures either with the dominant hand or both hands.
-
-The hand shape dimension describes the configuration, form, and posture of fingers as performing a gesture. Some hand shapes were performed including free hand, ball holding, bent hand, fist, pinch, open hand, index finger, thumb finger, flat hand, ASL-F, ASL-C, ASL-L, ASL-O, ASL-V, and ILY in reference of Vafaei's work \cite{Vafaei:2013}. For example, to have the drone moving away from the user is to perform a gesture with a flat hand. Another example would be performing a gesture with a ASL-V hand shape for activation of taking pictures.
-
-The trace dimension describes a variety of shapes traced by the moving parts of a gesture. Traces include straight line, fan shape, cone, hand shape expansion and contraction, and traceless. The traces are shown in FIGURE X.
-
-
-  \begin{table}
-    \centering
-    \begin{adjustwidth}{}{}
-    \begin{tabular}{|l|l|l|}
-      \hline
-      \tabhead{Referents} &
-      \multicolumn{1}{|p{0.13\columnwidth}|}{\centering\tabhead{Mean}} &
-      \multicolumn{1}{|p{0.13\columnwidth}|}{\centering\tabhead{Std.}} \\
-      \hline
-      Ascend and Descend & 1.00 & 0 \\
-      \hline
-      Forward & 1.25 & 0.50\\
-      \hline
-      Left and Right & 1.50 & 1.00 \\
-      \hline
-      Backward & 1.50 & 0.58 \\
-      \hline
-      Take pictures & 2.25 & 0.50 \\
-      \hline
-      Land & 2.75 & 0.96 \\
-      \hline
-      Take off & 3.00 & 0.82 \\
-      \hline
-      Record videos & 3.00 & 0.82 \\
-      \hline
-      Hover & 3.25 & 1.26 \\
-      \hline
-      Point to specified destination & 3.50 & 1.73 \\
-      \hline
-      Rotate & 3.50 & 0.58 \\
-      \hline
-      \bf{Mean} & \bf{2.41} & \bf{0.79}\\
-      \hline
-
-    \end{tabular}
-    \caption{Summary of user preference between 3 different interaction methods, it provides mean value, standard deviation, 95\% confidence interval for mean(Lower Bound and Upper Bound).}
-    \label{tab:table2}
-  \end{adjustwidth}
-  \end{table}
-
-\subsection{Agreement}
-
-After all 16 participants had provided gestures for each referent for Study 1, we grouped the gestures within each referent such that each group held identical gestures. Group size was then used to compute an agreement score A that reflects, in a single number, the degree of consensus among participants.
-
-\begin{equation}
-A = \frac{\displaystyle{\sum_{r\epsilon R }} \sum_{P_i \subseteq P_r } \left(\frac{\lvert{P_i}\rvert}{\lvert{P_r}\rvert}\right) ^ 2}{\displaystyle{\lvert{R}\rvert}}
-\end{equation}
-
-In Eq. 1, r is a referent in the set of all referents R, Pr is the set of proposed gestures for referent r, and Pi is a subset of identical gestures from Pr. The range for A is [|Pr|-1, 1]. As an example, consider agreement for forward in study 1 and study 2. Both had five groups of identical gestures. The former had groups of size 1, 10, 2, 1, and 2; the latter of size 0, 11, 3, 1, and 1. For study 1, we compute
-
-\begin{equation}
-   A_{forward} = \left(\frac{1}{16}\right) ^ 2  + \left(\frac{10}{16}\right) ^ 2 + \left(\frac{2}{16}\right) ^ 2 + \left(\frac{1}{16}\right) ^ 2 + \left(\frac{2}{16}\right) ^ 2= 0.48
-\end{equation}
-
 
 \begin{table}
   \centering
@@ -286,39 +209,120 @@ In Eq. 1, r is a referent in the set of all referents R, Pr is the set of propos
     \Xhline{4\arrayrulewidth}
   \end{tabular}
   \caption{"G." means "Gesture"}
-  \label{tab:table1}
+  \label{tab:table2}
   \end{adjustwidth}
 \end{table}
+
+\section{RESULT \& DISCUSSION}
+
+\subsection{Classification of 3D Gestures}
+Gesture taxonomy has been used in several works involving speech gestures, sign language, touch screen gestures, and so forth. However, works involving gestures for flying object seemed rare lately. We managed to explore the most intuitive gestures for UAVs and provide future developers insights for better control methods.
+
+In reference to related works, we manually classified each gesture along seven dimensions: form, nature, flow, dimensionality, handedness, hand shape, and trace. All the gestures were performed by participants from Study 1. Each dimension contains multiple categories, shown in Table 2.
+
+The dimension of form describes the motions of all gestures. The categories of this dimension includes static, large-scale motion, and small-scale motion. It is important to find out how many body parts are involved so that future developers will choose appropriate sensor devices to capture the motion.
+
+In the nature dimension, symbolic gestures are visual depictions with no simple equivalent in the world of objects and movements. For example, a time out gesture symbolizes the hovering action. Pantomimic gestures imitate a real meaningful action. For example, a participant would have the arms straight with clenched fist hand shape on both hands and one hand above the other as if turning a steering wheel. A pointing gesture points out the direction where the participant intends the drone to fly. Manipulative gestures have direct relation with real world object interaction. For example, moving the hands forward indicates pushing away the drone. Finally, abstract gestures are with arbitrary mappings. For example, putting a hand on the head to take off the drone would be an abstract gesture.
+
+In the flow dimension, if a gesture is discrete, the gesture must be completed first and subsequently bring out the desired task. For instance, the drone starts to move right after the user's right arm is straightened towards right. A gesture would be continuous if the task is performed during gesticulation. The drone rotates around the user as soon as the user faces at a different direction as an example.
+
+In the dimensionality dimension, gestures are classified according to the number of axes involved. The categories include single-axis, double-axis, tri-axis, and six-axis. The descriptions of each category are listed in TABLE X.
+
+% The handedness dimension describes the involvement of the user's dominant hand and non-dominant hand for each task. In our study, no participant performed gestures specifically for the non-dominant hand, so the non-dominant category is no needed. Participants performed gestures either with the dominant hand or both hands.
+
+% The hand shape dimension describes the configuration, form, and posture of fingers as performing a gesture. Some hand shapes were performed including free hand, ball holding, bent hand, fist, pinch, open hand, index finger, thumb finger, flat hand, ASL-F, ASL-C, ASL-L, ASL-O, ASL-V, and ILY in reference of Vafaei's work \cite{Vafaei:2013}. For example, to have the drone moving away from the user is to perform a gesture with a flat hand. Another example would be performing a gesture with a ASL-V hand shape for activation of taking pictures.
+
+% The trace dimension describes a variety of shapes traced by the moving parts of a gesture. Traces include straight line, fan shape, cone, hand shape expansion and contraction, and traceless. The traces are shown in FIGURE X.
+
+
+  \begin{table}
+    \centering
+    \begin{adjustwidth}{}{}
+    \begin{tabular}{|l|l|l|}
+      \hline
+      \tabhead{Referents} &
+      \multicolumn{1}{|p{0.13\columnwidth}|}{\centering\tabhead{Mean}} &
+      \multicolumn{1}{|p{0.13\columnwidth}|}{\centering\tabhead{Std.}} \\
+      \hline
+      Ascend and Descend & 1.00 & 0 \\
+      \hline
+      Forward & 1.25 & 0.50\\
+      \hline
+      Left and Right & 1.50 & 1.00 \\
+      \hline
+      Backward & 1.50 & 0.58 \\
+      \hline
+      Take pictures & 2.25 & 0.50 \\
+      \hline
+      Land & 2.75 & 0.96 \\
+      \hline
+      Take off & 3.00 & 0.82 \\
+      \hline
+      Record videos & 3.00 & 0.82 \\
+      \hline
+      Hover & 3.25 & 1.26 \\
+      \hline
+      Point to specified destination & 3.50 & 1.73 \\
+      \hline
+      Rotate & 3.50 & 0.58 \\
+      \hline
+      \bf{Mean} & \bf{2.41} & \bf{0.79}\\
+      \hline
+    \end{tabular}
+    \caption{The 11 commands for which participants chose gestures. Each command’s conceptual complexity was rated by the 4 authors (1=simple, 5=complex). During the study, each command was presented with an animation and recorded verbal description.}
+    \label{tab:table1}
+  \end{adjustwidth}
+  \end{table}
+
+\subsection{Agreement}
+
+After all 16 participants had provided gestures for each referent for Study 1, we grouped the gestures within each referent such that each group held identical gestures. Group size was then used to compute an agreement score A that reflects, in a single number, the degree of consensus among participants.
+
+\begin{equation}
+A = \frac{\displaystyle{\sum_{r\epsilon R }} \sum_{P_i \subseteq P_r } \left(\frac{\lvert{P_i}\rvert}{\lvert{P_r}\rvert}\right) ^ 2}{\displaystyle{\lvert{R}\rvert}}
+\end{equation}
+
+In Eq. 1, r is a referent in the set of all referents R, Pr is the set of proposed gestures for referent r, and Pi is a subset of identical gestures from Pr. The range for A is $\left[\lvert{P_r}\rvert ^{-1}, 1\right]$. As an example, consider agreement for forward in study 1 and study 2. Both had five groups of identical gestures. The former had groups of size 1, 10, 2, 1, and 2; the latter of size 0, 11, 3, 1, and 1. For study 1, we compute
+
+\begin{equation}
+   A_{forward} = 2\left(\frac{1}{16}\right) ^ 2  + \left(\frac{10}{16}\right) ^ 2 + 2\left(\frac{2}{16}\right) ^ 2 = 0.48
+\end{equation}
+
+% For study 2, we compute
+
+% \begin{equation}
+%    A_{forward2} = \left(\frac{11}{16}\right) ^ 2  + \left(\frac{3}{16}\right) ^ 2 + 2\left(\frac{1}{16}\right) ^ 2 = 0.52
+% \end{equation}
+
+
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=1\columnwidth]{agreement.pdf}
+\caption{With Caption Below, be sure to have a good resolution image
+  (see item D within the preparation instructions).}
+\label{fig:figure1}
+\end{figure}
 
 \begin{figure*}
   \centering
   \includegraphics[width=1\textwidth]{GestureSetFigure1.pdf}
-  \caption{The user-defined game control set with \emph{In-Air} interaction, The percentage indicate the portion of users who perform the control action for the game task.}
+  \caption{The user-defined gesture of rank 1 in user study 2.}
   \label{fig:GestureSetFigure}
   \end{figure*}
 
-\subsection{Mental Model Observations}
+% \subsection{Mental Model Observations}
 
-\begin{enumerate}
-\item Serveral users make different gestures during user experience from they defined early.  
-\item Some gestures are often maked and take more time to complete which users feel uncomfortable during user experience.  For instance, some users decide to use two hands to gesture ASL-L for task "hover". However, after real user experience beginning, hovering is often gestured. Therefore, user would find that continuously making this gesture is quite laborious. If user has decided to gesture fist to define "hover", it would have been more easy and comfortable. Hence, user- defined gesture before user experience probably  isn't the real user's  favorite gesture. Conversely, after user experience, users will define gestures which is closer to what users really eager in their heart.
+% \begin{enumerate}
+% \item Serveral users make different gestures during user experience from they defined early.  
+% \item Some gestures are often maked and take more time to complete which users feel uncomfortable during user experience.  For instance, some users decide to use two hands to gesture ASL-L for task "hover". However, after real user experience beginning, hovering is often gestured. Therefore, user would find that continuously making this gesture is quite laborious. If user has decided to gesture fist to define "hover", it would have been more easy and comfortable. Hence, user- defined gesture before user experience probably  isn't the real user's  favorite gesture. Conversely, after user experience, users will define gestures which is closer to what users really eager in their heart.
 
-\end{enumerate}
+% \end{enumerate}
 
 
 \section{Conclusion}
 
-It is important that you write for the SIGCHI audience.  Please read
-previous years' Proceedings to understand the writing style and
-conventions that successful authors have used.  It is particularly
-important that you state clearly what you have done, not merely what
-you plan to do, and explain how your work is different from previously
-published work, i.e., what is the unique contribution that your work
-makes to the field?  Please consider what the reader will learn from
-your submission, and how they will find your work useful.  If you
-write with these questions in mind, your work is more likely to be
-successful, both in being accepted into the Conference, and in
-influencing the work of our field.
+We have presented a study of interaction between flying object and  human gesture, that is leading to a user-defined gesture set based on participants' agreement over 176 gestures. It can reflect the user behavior and this has properties that make it a good candidate for deployment in gesture recognition system. In our opinion, this user-defined gesture can become a good enough reference for developers who study UAV gesture control.             We also have presented a taxonomy of gesture for flying object useful for analyzing and characterizing gestures in UAV control. In capturing gestures for this study, we have gained insight into the mental models of non-UAV-control-experience users and have translated theses into implications for technology and design. This work represents a necessary step in bringing interactive flying objects closer to the hands and minds of UAV users. Besides, it also helps designers and developers create gesture interacting to UAV for better user' experience. 
 
 \section{Acknowledgments}
 
