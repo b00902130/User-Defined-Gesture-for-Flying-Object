@@ -174,17 +174,17 @@ After Study 1, we categorized the user-defined gesture sets. Since the gesture f
   \begin{adjustwidth}{-0.4cm}{}
   \begin{tabular}{|l|l|l|}
     \hline
-    \multicolumn{3}{|p{1.06\columnwidth}|}{\centering\tabhead{\textbf{Taxonomy of Game Controls}}}\\
+    \multicolumn{3}{|p{1.06\columnwidth}|}{\centering\tabhead{\textbf{Taxonomy of Gesture Set}}}\\
     \Xhline{4\arrayrulewidth}
-    \em{Form} &Static& no motion occurs in G.\\ \cline{2-3}
+    \em{Form} &Static& No motion occurs in G.\\ \cline{2-3}
     &Large-scale& substantial motion occurs in G. \\ \cline{2-3}
     &Small-scale& little motion occurs in G.\\
     \Xhline{4\arrayrulewidth}
     \em{Nature} & Symbolic &visually depicts a sign \\ \cline{2-3}
-    &Pantomimic&imitates real meaningful actions.\\ \cline{2-3}
-    &Pointing&points to a specific direction.\\ \cline{2-3}
-    &Manipulative&directly manipulates the object.\\ \cline{2-3}
-    &Abstract&mapping is arbitrary.\\
+    &Pantomimic&Imitates real meaningful actions.\\ \cline{2-3}
+    &Pointing&Points to a specific direction.\\ \cline{2-3}
+    &Manipulative&Directly manipulates the object.\\ \cline{2-3}
+    &Abstract&Mapping is arbitrary.\\
     \Xhline{4\arrayrulewidth}
     \em{Flow} & Discrete&Action is performed after G.\\ \cline{2-3}
     &Continuous&Action is performed during G.\\ 
@@ -197,8 +197,8 @@ After Study 1, we categorized the user-defined gesture sets. Since the gesture f
     \em{Handedness} & Dominant & G. is performed by the \\&&user's dominant hand/arm \\ \cline{2-3}
     &Bi-manual&G. is performed using \\&&both hands/arms\\
     \Xhline{4\arrayrulewidth}
-    \em{Hand Shape} &&free hand, ball holding, bent hand,\\&& fist,pinch, open hand
-    index finger,\\&&thumb finger, flat hand, ASL-F,\\&&ASL-C, ASL-L, ASL-O, \\&&ASL-V, ILY\\
+    \em{Hand Shape} &&Free hand, ball holding, bent hand,\\&& Fist,pinch, Open hand
+    index finger,\\&&Fhumb finger, Flat hand, ASL-F,\\&&ASL-C, ASL-L, ASL-O, \\&&ASL-V, ILY\\
     \Xhline{4\arrayrulewidth}
     \em{Trace}&Straight line&Moving parts trace a straight line.\\ \cline{2-3}
     &Fan shape&Moving parts trace a fan shape.\\ \cline{2-3}
@@ -225,19 +225,19 @@ After Study 1, we categorized the user-defined gesture sets. Since the gesture f
 \subsection{Classification of 3D Gestures}
 Gesture taxonomy has been used in several works involving speech gestures, sign language, touch screen gestures, and so forth. However, works involving gestures for flying object seemed rare lately. We managed to explore the most intuitive gestures for UAVs and provide future developers insights for better control methods.
 
-In reference to related works, we manually classified each gesture along seven dimensions: form, nature, flow, dimensionality, handedness, hand shape, and trace. All the gestures were performed by participants from Study 1. Each dimension contains multiple categories, shown in Table \ref{tab:classificationTable}.
+In reference to related works, we manually classified each gesture along six dimensions: form, nature, flow, handedness, hand shape, and trace. All the gestures were performed by participants from Study 1. Each dimension contains multiple categories, shown in Table \ref{tab:classificationTable}.
 
-The dimension of form describes the motions of all gestures. The categories of this dimension includes static, large-scale motion, and small-scale motion. It is important to find out how many body parts are involved so that future developers will choose appropriate sensor devices to capture the motion.
+The dimension of form describes the motions of all gestures. It is important to find out how many body parts are involved so that future developers will choose appropriate sensor devices to capture the motion.
 
 The nature dimension conveys how UAVs are regarded and how a user interacts with them. A user would express with a symbolic gesture or a pantomimic gesture if a drone is regarded as more of a human. On the contrary, a user would perform a pointing gesture or a manipulative gesture if a drone is regarded as more of an object. Finally, abstract gestures are with arbitrary mappings for which no obvious concept human or object is considered.
 
 In the flow dimension, a gesture would be continuous if the task is performed during gesticulation. In contrast, if a gesture is discrete, the gesture must be completed first and subsequently bring out the desired task. Thus, the input sampling rate and real-time gesture recognition are important factors to achieve a functional system.
 
-The handedness dimension describes the involvement of the user's dominant hand and non-dominant hand for each task. In our study, no participant performed gestures specifically for the non-dominant hand, so participants performed gestures either with the dominant hand or both hands. Future developers should focus on dominant-hand gestures.
+The handedness dimension describes the involvement of the user's dominant hand and non-dominant hand for each task. In our study, no participant performed gestures specifically for the non-dominant hand, so future developers should focus on dominant-hand gestures.
 
-The hand shape dimension describes the configuration, form, and posture of fingers as performing a gesture. We discovered that participants asked for specific hand shapes to perform specific tasks. Therefore, hand shape recognition should be considered and be part of future system implementation while it is mostly neglected in related works. The hand shapes listed in TABLE \ref{tab:classificationTable} were in reference of Vafaei's work \cite{Vafaei:2013}.
+The hand shape dimension describes the configuration, form, and posture of fingers as performing a gesture. We discovered that participants asked for specific hand shapes to perform specific tasks. Therefore, hand shape recognition should be considered and be part of future system implementation while it is mostly neglected in related works. The hand shapes listed in Table \ref{tab:classificationTable} were in reference of Vafaei's work \cite{Vafaei:2013}.
 
-The trace dimension describes a variety of shapes traced by the moving parts of a gesture. Traces include straight line, fan shape, cone, hand shape expansion and contraction, and traceless. The future drone system should analyze and recognize these traces after capturing the users' motion. The traces are shown in Figure \ref{fig:GestureSetFigure}.
+The trace dimension describes a variety of shapes traced by the moving parts of a gesture. The future drone system should analyze and recognize these traces after capturing the users' motion. The traces are shown in Figure \ref{fig:GestureSetFigure}.
 
 % The handedness dimension describes the involvement of the user's dominant hand and non-dominant hand for each task. In our study, no participant performed gestures specifically for the non-dominant hand, so the non-dominant category is no needed. Participants performed gestures either with the dominant hand or both hands.
 
@@ -314,17 +314,17 @@ In Eq. 1, r is a referent in the set of all referents R, Pr is the set of propos
 The result of agreement is indicated in Figure \ref{fig:agreementFigure}. The overall agreement for Study 1 gestures was $A=0.22$. Gesture complexities correlated inversely with their agreement, as more complex referents elicited lesser gestural agreement.
 
 \subsubsection{Finding}
-
-The statistical result of Figure \ref{fig:agreementFigure} shows that most of the basic movement controls involving translation along the pitch, roll, or yaw axes such as forward and backward, left-right, and ascend-descend controls are with greater agreement compared to that of the rest of the controls. Thus, designers could opt the most favorable gestures shown in Figure \ref{fig:agreementFigure} for each gesture set mentioned above. The remaining gesture sets such as hovering, rotation, and takeoff have low agreement mainly because most users were unfamiliar to UAV controls.
-
-To prevent a subjective classification, the Kappa Consistency was used to guarantee the notable difference between each category. Two additional participants were recruited to label each task from total 176 gestures into the above category (Figure\ref{fig:taxonomyFigure}). We conclude that our classification has notable difference between each class because of the receive Kappa value are high enough for each task.
-
 \begin{figure*}
   \centering
   \includegraphics[width=1\textwidth]{GestureSetFigure1.pdf}
   \caption{The user-defined gesture of rank 1 in user study 2.}
   \label{fig:GestureSetFigure}
   \end{figure*}
+The statistical result of Figure \ref{fig:agreementFigure} shows that most of the basic movement controls involving translation along the pitch, roll, or yaw axes such as forward and backward, left-right, and ascend-descend controls are with greater agreement compared to that of the rest of the controls. Thus, designers could opt the most favorable gestures shown in Figure \ref{fig:agreementFigure} for each gesture set mentioned above. The remaining gesture sets such as hovering, rotation, and takeoff have low agreement mainly because most users were unfamiliar to UAV controls.
+
+To prevent a subjective classification, the Kappa Consistency was used to guarantee the notable difference between each category. Two additional participants were recruited to label each task from total 176 gestures into the above category (Figure\ref{fig:taxonomyFigure}). We conclude that our classification has notable difference between each class because of the receive Kappa value are high enough for each task.
+
+
 
 % \subsection{Mental Model Observations}
 
